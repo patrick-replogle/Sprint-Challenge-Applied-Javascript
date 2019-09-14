@@ -56,6 +56,9 @@ function Carousel() {
 }
 
 let images = document.querySelectorAll('img');
+let leftButton = document.querySelector('.left-button')
+let rightButton = document.querySelector('.right-button')
+
 let index = 0;
 images[index].style.display = 'block';
 
