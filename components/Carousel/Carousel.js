@@ -19,6 +19,7 @@
 */
 
 const carouselContainer = document.querySelector('.carousel-container')
+carouselContainer.appendChild(Carousel())
 
 function Carousel() {
   let carousel = document.createElement('div')
@@ -35,8 +36,17 @@ function Carousel() {
 
   leftButton.textContent = '<';
   img1.setAttribute('src',"./assets/carousel/mountains.jpeg")
-  img2.setAttribute('src',"./assets/carousel/mountains.jpeg")
-  img3.setAttribute('src',"./assets/carousel/mountains.jpeg")
-  img4.setAttribute('src',"./assets/carousel/mountains.jpeg")
-  rightButton.textContent = '>'
+  img2.setAttribute('src',"./assets/carousel/computer.jpeg" )
+  img3.setAttribute('src',"./assets/carousel/trees.jpeg")
+  img4.setAttribute('src',"./assets/carousel/turntable.jpeg")
+  rightButton.textContent = '>';
+
+  carousel.appendChild(leftButton)
+  carousel.appendChild(img1)
+  carousel.appendChild(img2)
+  carousel.appendChild(img3)
+  carousel.appendChild(img4)
+  carousel.appendChild(rightButton)
+
+  return carousel;
 }
